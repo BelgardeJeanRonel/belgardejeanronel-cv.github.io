@@ -25,7 +25,7 @@ ul{
 
 
 $breakpoints: (
-  ecranSuperieurA: 700px
+  ecranSuperieurA: 786px
 );
 
 @mixin large-screen {
@@ -314,6 +314,9 @@ $breakpoints: (
         padding: 47px 10px;
         margin-top: 30px;
         @include boxShadow-section();
+        @include large-screen(){
+            margin-top: 0;
+         }
         & h2{
             display: flex;
             margin-top: 0;
@@ -377,9 +380,6 @@ $breakpoints: (
             padding: 2px 6px;
             border-radius: 5px;
         }
-        @include large-screen(){
-            margin-top: 0;
-         }
     }
     @include large-screen(){
         display: grid;
@@ -409,6 +409,7 @@ $breakpoints: (
         & ul{
             display: flex;
             gap: 10px;
+            flex-wrap: wrap;
         }
         & a{
             display: inline-block;
