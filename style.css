@@ -403,6 +403,11 @@ ul {
   width: 30px;
   height: 30px;
 }
+.footer .icon-reseauEmail {
+  width: 30px;
+  height: 35px;
+  transform: translateY(9px);
+}
 .footer h4 {
   margin-bottom: 0;
 }
