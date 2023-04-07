@@ -1,0 +1,107 @@
+.header{
+    padding: 7px 20px 2px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color__primary;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    &__logo svg{
+        width: 30px;
+        height: 30px;
+        color: white;
+    }
+
+    &__menu{
+        display: flex;
+
+        @include large-screen(){
+            display: none;
+         }
+
+        &__nav{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 70%;
+            height: 100%;
+            background-color: $color__primary;
+            padding: 20px;
+            transform: translate(200%);
+            z-index: 2;
+
+            & ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 60px;
+
+                & a{
+                    display: inline-block;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    color: $blanc;
+                    font-size: 1.1em;
+                }
+            }
+
+            &.show-modal{
+                animation-name: show_menu; 
+                animation-duration: .3s;
+                animation-fill-mode: forwards;
+            }
+
+        }
+
+        & .bg-modal{
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4); 
+            z-index: 1;
+
+            &.show-modal{
+                display: block;
+            }
+
+        }
+       
+    }
+
+    .icon__open{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        color: $blanc;
+        transform: translateY(5px);
+    }
+
+    .icon__close{
+        width: 20px;
+        height: 18px;
+        float: right;
+        color: $blanc;
+        cursor: pointer;
+    }
+
+    .projets{
+        display: none;
+
+        @include large-screen(){
+            display: inline-block;
+            padding: 0 10px;
+            color: $blanc;
+            text-decoration: none;
+         }
+    }
+
+    & a:hover{
+        text-decoration: underline;
+    }
+    
+}

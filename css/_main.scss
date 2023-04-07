@@ -1,167 +1,14 @@
-*{
-    box-sizing: border-box;
-}
-
-$blanc : white;
-$color__primary : rgb(161, 38, 45);
-$bg-body : rgb(238, 238, 238);
-$bg-profil : rgb(212, 212, 212);
-$color-text : rgb(84, 84, 84);
-$color-boxShadow : rgba(0, 0, 0, 0.51);
-
-body, html{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    background-color: $bg-body;
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-}
-
-
-
-$breakpoints: (
-  ecranSuperieurA: 790px
-);
-
-@mixin large-screen {
-    @media screen and (min-width: map-get($breakpoints, ecranSuperieurA)){
-        @content;
-    }
-}
-
-@mixin niveau {
-    background-color: $color__primary;
-    border-radius: 20px;
-}
-
-@mixin boxShadow-section{
-    box-shadow: 0px 0px 10px 0px $color-boxShadow;
-}
-
-
-// -------------- ANIMATION MENU -----------------
-
-@keyframes show_menu {
-    from {transform: translateX(200%);}
-    to {transform: translateX(0);}
-    
-  }
-
-  @keyframes animation_emoji {
-    from {transform: translateY(0);}
-    to {transform: translateY(-10px);}
-    
-  }
-
-
-
-// -------------- HEADER STYLE-----------------
-
-.header{
-    padding: 7px 20px 2px;
-    display: flex;
-    justify-content: space-between;
-    background-color: $color__primary;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    &__logo svg{
-        width: 30px;
-        height: 30px;
-        color: white;
-    }
-    &__menu{
-        display: flex;
-        &__nav{
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 70%;
-            height: 100%;
-            background-color: $color__primary;
-            padding: 20px;
-            transform: translate(200%);
-            z-index: 2;
-            & ul{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 60px;
-                & a{
-                    display: inline-block;
-                    // background: $color__primary;
-                    padding: 5px 10px;
-                    text-decoration: none;
-                    color: $blanc;
-                    font-size: 1.1em;
-                }
-            }
-            &.show-modal{
-                animation-name: show_menu; 
-                animation-duration: .3s;
-                animation-fill-mode: forwards;
-            }
-        }
-        & .bg-modal{
-            display: none;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.4); 
-            z-index: 1;
-            &.show-modal{
-                display: block;
-            }
-        }
-        @include large-screen(){
-            display: none;
-         }
-    }
-    .icon__open{
-        width: 20px;
-        height: 20px;
-        cursor: pointer;
-        color: $blanc;
-        transform: translateY(5px);
-    }
-    .icon__close{
-        width: 20px;
-        height: 18px;
-        float: right;
-        color: $blanc;
-        cursor: pointer;
-    }
-    .projets{
-        display: none;
-        @include large-screen(){
-            display: inline-block;
-            padding: 0 10px;
-            color: $blanc;
-            text-decoration: none;
-         }
-    }
-    & a:hover{
-        text-decoration: underline;
-    }
-    
-}
-
-
-// -------------- MAIN STYLE-----------------
-
 .main{
     max-width: 1250px;
     margin: 30px auto;
     padding: 0 15px;
     color: $color-text;
+
+    @include large-screen(){
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+     }
 
     //---------------- MAIN__PROFIL 
 
@@ -170,46 +17,60 @@ $breakpoints: (
         margin-top: 60px;
         @include boxShadow-section();
         padding-bottom: 30px;
+
+        @include large-screen(){
+            grid-row: 1/3;
+            margin-top: 30px;
+         }
+
         &__header > div:first-child{
             position: relative;
             background-color: $bg-profil;
             padding: 30px 0;
             margin-bottom: 30px;
+
             & div{
                 width: 60%;
                 margin: auto;
             }
+
             & img{
                 border-radius: 50%;
                 padding: 4px;
                 border: 1px solid $color__primary;
             }
+
             & h1{
                 position: absolute;
                 bottom: -18px;
-                // margin-left: 20px;
                 color: rgb(51, 50, 50);
                 font-weight: lighter;
                 left: 50%;
                 transform: translate(-50%);
                 white-space: nowrap;
             }
+
         }
+
         &__header > div:not(div:first-child){
             padding: 0 10px;
             display: flex;
             gap: 15px;
             margin-top: 15px;
+
             & .icon-profil{
                 width: 25px;
                 height: 25px;
                 color: $color__primary;
                 flex: none;
             }
+
         }
+
         &__competences{
             padding: 10px;
             margin-top: 15px;
+
             & h3{
                 border-top: 1px solid $bg-profil;
                 padding-top: 40px;
@@ -217,84 +78,99 @@ $breakpoints: (
                 gap: 20px;
                 font-size: 1em;
             }
+
             & > div{
                 background-color: $bg-profil;
                 border-radius: 20px;
                 text-align: center;
             }
+
             & .html{
                 width: 80%;
                 @include niveau();
                 height: 25px;
             }
+
             & .css{
                 width: 80%;
                 @include niveau();
                 height: 25px;
             }
+
             & .sass{
                 width: 60%;
                 @include niveau();
                 height: 25px;
             }
+
             & .git{
                 width: 60%;
                 @include niveau();
                 height: 25px;
             }
+
             & .javascript{
                 width: 50%;
                 @include niveau();
                 color: $blanc;
             }
+
             & .php{
                 width: 50%;
                 @include niveau();
                 color: $blanc;
             }
+
             & .word{
                 width: 60%;
                 @include niveau();
                 height: 25px;
             }
+
         }
+
         &__langues{
             padding: 0 20px;
             margin-top: 70px;
+
             & h3{
                 display: flex;
                 gap: 20px;
             }
+
             & > div{
                 background-color: $bg-profil;
                 border-radius: 20px;
             }
+
             & .francais{
                 width: 100%;
                 @include niveau();
                 height: 25px;
             }
+
             & .creole{
                 width: 100%;
                 @include niveau();
                 height: 25px;
             }
+
             & .espagnol{
                 width: 90%;
                 @include niveau();
                 height: 25px;
             }
+
             & .anglais{
                 width: 30%;
                 @include niveau();
                 height: 25px;
             }
+
         }
-        @include large-screen(){
-            grid-row: 1/3;
-            margin-top: 30px;
-         }
+
     }
+
     & .icon-comp-langues{
         width: 20px;
         height: 20px;
@@ -302,6 +178,7 @@ $breakpoints: (
         color: $color__primary;
         flex: none;
     }
+
     & p{
         margin-bottom: 0;
     }
@@ -314,9 +191,11 @@ $breakpoints: (
         padding: 47px 10px;
         margin-top: 30px;
         @include boxShadow-section();
+
         @include large-screen(){
             margin-top: 0;
          }
+
         & h2{
             display: flex;
             margin-top: 0;
@@ -325,12 +204,15 @@ $breakpoints: (
             font-size: 1.2em;
             margin-bottom: 30px;
         }
+
         & > div:nth-child(2){
             padding-bottom: 30px;
             margin-bottom: 30px;
             border-bottom: 1px solid $bg-profil;
         }
+
     }
+
     & .icon-exp-education{
         width: 25px;
         height: 25px;
@@ -338,18 +220,22 @@ $breakpoints: (
         transform: translateY(-3px);
         flex: none;
     }
+
     & h3{
         font-size: 1em;
     }
+
     & span{
         display: flex;
         gap: 20px;
         align-items: center;
         color: $color__primary;
+
         & .icon-calendar{
             width: 15px;
             height: 15px;
         }
+
     }
     
 
@@ -360,6 +246,7 @@ $breakpoints: (
         padding: 45px 10px;
         margin-top: 30px;
         @include boxShadow-section();
+
         & h2{
             display: flex;
             margin-top: 0;
@@ -368,11 +255,13 @@ $breakpoints: (
             font-size: 1.2em;
             margin-bottom: 30px;
         }
+
         & > div:not(div:nth-child(4)){
             padding-bottom: 30px;
             margin-bottom: 30px;
             border-bottom: 1px solid $bg-profil;
         }
+
         & .aujourdhui{
             background-color: $color__primary;
             color: $blanc;
@@ -380,85 +269,7 @@ $breakpoints: (
             padding: 2px 6px;
             border-radius: 5px;
         }
-    }
-    @include large-screen(){
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 20px;
-     }
 
-
-}
-
-
-// -------------- FOOTER STYLE-----------------
-
-.footer{
-    padding: 20px ;
-    background-color: $color__primary;
-    color: $blanc;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    @include large-screen(){
-       justify-content: space-between;
-       flex-direction: row;
-       padding: 20px;
-     }
-    .projets{
-        & ul{
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        & a{
-            display: inline-block;
-            color: $color-text;
-            background-color: $blanc;
-            padding: 3px 10px ;
-            border-radius: 5px;
-            text-decoration: none;
-            &:hover{
-                background-color: $color-text;
-                color: $blanc;
-                transition: 1s;
-            }
-        }
     }
-    .icon-reseau{
-        width: 20px;
-        height: 20px;
-        margin: 0 10px;
-    }
-    
-    .icon-reseauSocial{
-        width: 30px;
-        height: 30px;
-    }
-    .icon-reseauEmail{
-        width: 20px;
-        height: 20px;
-        // transform: translateY(9px)
-        margin-right: 3px;
-        margin-left: 2px;
-    }
-    & h4{
-        margin-bottom: 0;
-    }
-    .reseaux a{
-        color: $blanc;
-        display: inline-block;
-        margin-top: 10px;
-        &:hover{
-            color: $bg-profil;
-            transition: 1s;
-        }
-    }
-    .emoji{
-        animation-name: animation_emoji;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        display: inline-block;
-    }
-    
+   
 }
