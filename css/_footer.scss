@@ -39,38 +39,41 @@
     }
 
     .icon-reseau{
-        width: 20px;
-        height: 20px;
-        margin: 0 10px;
+        // width: 20px;
+        height: 100%;
+        // margin: 0 10px;
+        width: 100%;
     }
-    
-    .icon-reseauSocial{
-        width: 30px;
-        height: 30px;
-    }
-
-    .icon-reseauEmail{
-        width: 20px;
-        height: 20px;
-        margin-right: 3px;
-        margin-left: 2px;
+    .icon-facebook{
+        height: 100%;
+        width: 100%;
+        transform: translateY(-1px);
     }
 
     & h4{
         margin-bottom: 0;
     }
 
-    .reseaux a{
-
-        color: $blanc;
-        display: inline-block;
-        margin-top: 10px;
-
-        &:hover{
-            color: $bg-profil;
-            transition: 1s;
+    .reseaux{
+        div{
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
         }
 
+        a{
+            color: $blanc;
+            display: inline-block;
+            margin-top: 10px;
+            width: 20px;
+            height: 20px;
+
+            &:hover{
+                color: $bg-profil;
+                transition: 1s;
+            }
+
+        }
     }
     
     .emoji{
