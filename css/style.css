@@ -398,11 +398,6 @@ ul {
   height: 100%;
   width: 100%;
 }
-.footer .icon-facebook {
-  height: 28px;
-  width: 100%;
-  transform: translateY(-2px);
-}
 .footer h4 {
   margin-bottom: 0;
 }
@@ -427,4 +422,35 @@ ul {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   display: inline-block;
+}
+
+/* =================== APPARITION AU DEFILLEMENT ==================== */
+.reveal-loaded .reveal[class*=reveal-] {
+  opacity: 0 !important;
+  transform: translateY(10px) !important;
+  transition: 0s !important;
+}
+
+.reveal-loaded [class*=reveal-] {
+  transition: 2s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal-loaded .reveal-2 {
+  transition-delay: 0.1s;
+}
+
+.reveal-loaded .reveal-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-loaded .reveal-4 {
+  transition-delay: 0.5s;
+}
+
+.reveal-loaded .reveal-5 {
+  transition-delay: 0.7s;
+}
+
+.reveal-loaded .reveal-6 {
+  transition-delay: 0.9s;
 }/*# sourceMappingURL=style.css.map */
