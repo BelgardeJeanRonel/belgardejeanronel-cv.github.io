@@ -38,6 +38,10 @@
                 border-radius: 50%;
                 padding: 4px;
                 border: 1px solid $color__primary;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: 1s;
+                }
             }
 
             & h1{
