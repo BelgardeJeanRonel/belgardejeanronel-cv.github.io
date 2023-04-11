@@ -393,6 +393,7 @@ ul {
   background-color: rgb(84, 84, 84);
   color: white;
   transition: 1s;
+  transform: scale(1.2);
 }
 .footer .icon-reseau {
   height: 100%;
@@ -416,6 +417,7 @@ ul {
 .footer .reseaux a:hover {
   color: rgb(212, 212, 212);
   transition: 1s;
+  transform: scale(1.3);
 }
 .footer .emoji {
   animation-name: animation_emoji;
