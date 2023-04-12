@@ -125,11 +125,6 @@
                 color: $blanc;
             }
 
-            & .word{
-                width: 60%;
-                @include niveau();
-                height: 25px;
-            }
 
         }
 
@@ -169,6 +164,8 @@
                 width: 30%;
                 @include niveau();
                 height: 25px;
+                color: $blanc;
+                text-align: center;
             }
 
         }

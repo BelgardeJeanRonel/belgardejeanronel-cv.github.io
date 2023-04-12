@@ -242,12 +242,6 @@ ul {
   border-radius: 20px;
   color: white;
 }
-.main__profil__competences .word {
-  width: 60%;
-  background-color: rgb(161, 38, 45);
-  border-radius: 20px;
-  height: 25px;
-}
 .main__profil__langues {
   padding: 0 20px;
   margin-top: 70px;
@@ -283,6 +277,8 @@ ul {
   background-color: rgb(161, 38, 45);
   border-radius: 20px;
   height: 25px;
+  color: white;
+  text-align: center;
 }
 .main .icon-comp-langues {
   width: 20px;
