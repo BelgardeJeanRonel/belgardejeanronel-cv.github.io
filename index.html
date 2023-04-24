@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="svg/fav-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/app.js" type="module"></script>
 </head>
 <body>
@@ -18,7 +19,14 @@
                     <use xlink:href="svg/logo.svg#logo"></use>
                 </svg>
             </a>
+            <i class="fa fa-moon-o" id="theme-switch"></i>
+            <div class="theme-color-switcher">
+                <button id="theme-green" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+                <button id="theme-red" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+                <button id="theme-blue" class="theme-button" type="button" aria-label="Changer la couleur du thème"></button>
+            </div>
         </div>
+
 
         <section class="header__menu">
             <svg class="icon__open">

@@ -1,3 +1,5 @@
+import { eventClickThemeColor } from "./functions.js";
+
 const iconOpenMenu = document.querySelector(".icon__open");
 const backgroundModal = document.querySelector(".bg-modal");
 const iconCloseMenu = document.querySelector(".icon__close");
@@ -90,3 +92,26 @@ const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('.reveal').forEach( r => {
     observer.observe(r)
 })
+
+
+const themeSwitch = document.querySelector("#theme-switch");
+const body = document.querySelector("body");
+
+themeSwitch.addEventListener("click", function (){
+    body.classList.toggle("theme-dark");
+   
+    if (themeSwitch.classList.contains("fa-moon-o")){
+        themeSwitch.className = "fa fa-sun-o";
+    }else{
+        themeSwitch.className = "fa fa-moon-o";
+    }
+})
+
+const themeRed = document.querySelector("#theme-red");
+eventClickThemeColor(themeRed, body, "theme-red", "theme-green", "theme-blue");
+
+const themeGreen = document.querySelector("#theme-green");
+eventClickThemeColor(themeGreen, body, "theme-green", "theme-red", "theme-blue");
+
+const themeBlue = document.querySelector("#theme-blue");
+eventClickThemeColor(themeBlue, body, "theme-blue", "theme-green", "theme-red");

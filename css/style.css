@@ -2,12 +2,53 @@
   box-sizing: border-box;
 }
 
-body, html {
+:root {
+  --section: white;
+  --body: rgb(238, 238, 238);
+  --text: rgb(84, 84, 84);
+  --shadow: rgba(0, 0, 0, 0.51);
+  --theme-red: rgb(187, 36, 44);
+  --theme-red-alt: rgb(151, 36, 42);
+  --theme-blue: rgb(68, 124, 187);
+  --theme-blue-alt: rgb(56, 101, 152);
+  --theme-green: #296;
+  --theme-green-alt: rgb(28, 123, 82);
+  --color-section: var(--section);
+  --color-body: var(--body);
+  --color-text: var(--text);
+  --color-shadow: var(--shadow);
+  --color-primary: var(--theme-red);
+  --color-primary-alt: var(--theme-red-alt);
+}
+
+.theme-dark {
+  --color-section: black;
+  --color-body: rgba(16, 16, 16, 0.89);
+  --color-text: rgba(255, 255, 255, 0.901);
+  --color-shadow: rgba(97, 97, 97, 0.908);
+}
+
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: rgb(238, 238, 238);
+  background-color: var(--color-body);
+}
+
+.theme-red {
+  --color-primary: var(--theme-red);
+  --color-primary-alt: var(--theme-red-alt);
+}
+
+.theme-green {
+  --color-primary: var(--theme-green);
+  --color-primary-alt: var(--theme-green-alt);
+}
+
+.theme-blue {
+  --color-primary: var(--theme-blue);
+  --color-primary-alt: var(--theme-blue-alt);
 }
 
 ul {
@@ -35,16 +76,62 @@ ul {
   padding: 7px 20px 2px;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
+.header__logo {
+  display: flex;
+  gap: 0.7em;
+}
 .header__logo svg {
   width: 30px;
   height: 30px;
   color: white;
+}
+.header__logo #theme-switch {
+  color: white;
+  transform: translateY(22%);
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.header__logo #theme-switch:hover {
+  color: rgb(233, 233, 233);
+}
+.header__logo .theme-color-switcher {
+  background: white;
+  display: flex;
+  gap: 0.5em;
+  height: 1.5em;
+  border-radius: 1em;
+  transform: translateY(22%);
+}
+.header__logo .theme-color-switcher .theme-button {
+  border: none;
+  width: 1.8em;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header__logo .theme-color-switcher #theme-red {
+  background: var(--theme-red);
+}
+.header__logo .theme-color-switcher #theme-red:hover {
+  background: var(--theme-red-alt);
+}
+.header__logo .theme-color-switcher #theme-green {
+  background: var(--theme-green);
+}
+.header__logo .theme-color-switcher #theme-green:hover {
+  background: var(--theme-green-alt);
+}
+.header__logo .theme-color-switcher #theme-blue {
+  background: var(--theme-blue);
+}
+.header__logo .theme-color-switcher #theme-blue:hover {
+  background: var(--theme-blue-alt);
 }
 .header__menu {
   display: flex;
@@ -60,7 +147,7 @@ ul {
   right: 0;
   width: 70%;
   height: 100%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   padding: 20px;
   transform: translate(200%);
   z-index: 2;
@@ -129,7 +216,7 @@ ul {
   max-width: 1250px;
   margin: 30px auto;
   padding: 0 15px;
-  color: rgb(84, 84, 84);
+  color: var(--color-text);
 }
 @media screen and (min-width: 790px) {
   .main {
@@ -139,9 +226,9 @@ ul {
   }
 }
 .main__profil {
-  background-color: white;
+  background-color: var(--color-section);
   margin-top: 60px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 0px 10px 0px var(--color-shadow);
   padding-bottom: 30px;
 }
 @media screen and (min-width: 790px) {
@@ -163,7 +250,7 @@ ul {
 .main__profil__header > div:first-child img {
   border-radius: 50%;
   padding: 4px;
-  border: 1px solid rgb(161, 38, 45);
+  border: 1px solid var(--color-primary);
 }
 .main__profil__header > div:first-child img:hover {
   transform: scale(1.05);
@@ -187,7 +274,7 @@ ul {
 .main__profil__header > div:not(div:first-child) .icon-profil {
   width: 25px;
   height: 25px;
-  color: rgb(161, 38, 45);
+  color: var(--color-primary);
   flex: none;
 }
 .main__profil__competences {
@@ -208,37 +295,37 @@ ul {
 }
 .main__profil__competences .html {
   width: 80%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
 .main__profil__competences .css {
   width: 80%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
 .main__profil__competences .sass {
   width: 60%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
 .main__profil__competences .git {
   width: 60%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
 .main__profil__competences .javascript {
   width: 50%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   color: white;
 }
 .main__profil__competences .php {
   width: 50%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   color: white;
 }
@@ -256,25 +343,25 @@ ul {
 }
 .main__profil__langues .francais {
   width: 100%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
 .main__profil__langues .creole {
   width: 100%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
 .main__profil__langues .espagnol {
   width: 90%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
 .main__profil__langues .anglais {
   width: 30%;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
   color: white;
@@ -284,17 +371,17 @@ ul {
   width: 20px;
   height: 20px;
   align-self: center;
-  color: rgb(161, 38, 45);
+  color: var(--color-primary);
   flex: none;
 }
 .main p {
   margin-bottom: 0;
 }
 .main__expProfessionnelles {
-  background-color: white;
+  background-color: var(--color-section);
   padding: 47px 10px;
   margin-top: 30px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 0px 10px 0px var(--color-shadow);
 }
 @media screen and (min-width: 790px) {
   .main__expProfessionnelles {
@@ -317,7 +404,7 @@ ul {
 .main .icon-exp-education {
   width: 25px;
   height: 25px;
-  color: rgb(161, 38, 45);
+  color: var(--color-primary);
   transform: translateY(-3px);
   flex: none;
 }
@@ -328,17 +415,17 @@ ul {
   display: flex;
   gap: 20px;
   align-items: center;
-  color: rgb(161, 38, 45);
+  color: var(--color-primary);
 }
 .main span .icon-calendar {
   width: 15px;
   height: 15px;
 }
 .main__education {
-  background-color: white;
+  background-color: var(--color-section);
   padding: 45px 10px;
   margin-top: 30px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 0px 10px 0px var(--color-shadow);
 }
 .main__education h2 {
   display: flex;
@@ -354,7 +441,7 @@ ul {
   border-bottom: 1px solid rgb(212, 212, 212);
 }
 .main__education .aujourdhui {
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   color: white;
   display: inline-block;
   padding: 2px 6px;
@@ -363,7 +450,7 @@ ul {
 
 .footer {
   padding: 20px;
-  background-color: rgb(161, 38, 45);
+  background-color: var(--color-primary);
   color: white;
   display: flex;
   flex-direction: column;
@@ -383,14 +470,14 @@ ul {
 }
 .footer .projets a {
   display: inline-block;
-  color: rgb(84, 84, 84);
+  color: black;
   background-color: white;
   padding: 3px 10px;
   border-radius: 5px;
   text-decoration: none;
 }
 .footer .projets a:hover {
-  background-color: rgb(84, 84, 84);
+  background-color: rgb(70, 70, 70);
   color: white;
   transition: 1s;
   transform: scale(1.2);

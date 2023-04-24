@@ -1,0 +1,23 @@
+:root{
+    --section : white;
+    --body: rgb(238, 238, 238);
+    --text: rgb(84, 84, 84);
+    --shadow: rgba(0, 0, 0, 0.51);
+    --theme-red: rgb(187, 36, 44);
+    --theme-red-alt: rgb(151, 36, 42);
+    --theme-blue: rgb(68, 124, 187);
+    --theme-blue-alt: rgb(56, 101, 152);
+    --theme-green:  #296;
+    --theme-green-alt:  rgb(28, 123, 82);
+
+
+
+
+    --color-section : var(--section);
+    --color-body : var(--body);
+    --color-text : var(--text);
+    --color-shadow : var(--shadow);
+    --color-primary : var(--theme-red);
+    --color-primary-alt : var(--theme-red-alt);
+}
+

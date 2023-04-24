@@ -2,26 +2,52 @@
     box-sizing: border-box;
 }
 
-$blanc : white;
-$color__primary : rgb(161, 38, 45);
-$bg-body : rgb(238, 238, 238);
+// $color__primary : rgb(161, 38, 45);
 $bg-profil : rgb(212, 212, 212);
-$color-text : rgb(84, 84, 84);
-$color-boxShadow : rgba(0, 0, 0, 0.51);
 
-body, html{
+// rgb(243, 74, 52)
+// rgb(161, 38, 45)
+
+
+
+@import "_color";
+
+.theme-dark{
+    --color-section: black;
+    --color-body: rgba(16, 16, 16, 0.89);
+    --color-text: rgba(255, 255, 255, 0.901);
+    --color-shadow: rgba(97, 97, 97, 0.908);
+}
+
+
+body{
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: $bg-body;
+    background-color: var(--color-body);
+
+}
+
+.theme-red{
+    --color-primary: var(--theme-red);
+    --color-primary-alt: var(--theme-red-alt);
+}
+
+.theme-green{
+    --color-primary: var(--theme-green);
+    --color-primary-alt: var(--theme-green-alt);
+}
+
+.theme-blue{
+    --color-primary: var(--theme-blue);
+    --color-primary-alt: var(--theme-blue-alt);
 }
 
 ul{
     list-style: none;
     padding: 0;
 }
-
 
 
 $breakpoints: (
@@ -35,12 +61,12 @@ $breakpoints: (
 }
 
 @mixin niveau {
-    background-color: $color__primary;
+    background-color: var(--color-primary);
     border-radius: 20px;
 }
 
 @mixin boxShadow-section{
-    box-shadow: 0px 0px 10px 0px $color-boxShadow;
+    box-shadow: 0px 0px 10px 0px var(--color-shadow);
 }
 
 

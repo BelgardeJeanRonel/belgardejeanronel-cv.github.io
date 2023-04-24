@@ -2,7 +2,7 @@
     max-width: 1250px;
     margin: 30px auto;
     padding: 0 15px;
-    color: $color-text;
+    color: var(--color-text);
 
     @include large-screen(){
         display: grid;
@@ -13,7 +13,7 @@
     //---------------- MAIN__PROFIL 
 
     &__profil{
-        background-color: $blanc;
+        background-color: var(--color-section);
         margin-top: 60px;
         @include boxShadow-section();
         padding-bottom: 30px;
@@ -37,7 +37,7 @@
             & img{
                 border-radius: 50%;
                 padding: 4px;
-                border: 1px solid $color__primary;
+                border: 1px solid var(--color-primary);
                 &:hover{
                     transform: scale(1.05);
                     transition: 1s;
@@ -65,7 +65,7 @@
             & .icon-profil{
                 width: 25px;
                 height: 25px;
-                color: $color__primary;
+                color: var(--color-primary);
                 flex: none;
             }
 
@@ -116,13 +116,13 @@
             & .javascript{
                 width: 50%;
                 @include niveau();
-                color: $blanc;
+                color: white;
             }
 
             & .php{
                 width: 50%;
                 @include niveau();
-                color: $blanc;
+                color: white;
             }
 
 
@@ -164,7 +164,7 @@
                 width: 30%;
                 @include niveau();
                 height: 25px;
-                color: $blanc;
+                color: white;
                 text-align: center;
             }
 
@@ -176,7 +176,7 @@
         width: 20px;
         height: 20px;
         align-self: center;
-        color: $color__primary;
+        color: var(--color-primary);
         flex: none;
     }
 
@@ -188,7 +188,7 @@
     //---------------- MAIN__EXPPROFESSIONNELLES 
 
     &__expProfessionnelles{
-        background-color: $blanc;
+        background-color: var(--color-section);
         padding: 47px 10px;
         margin-top: 30px;
         @include boxShadow-section();
@@ -217,7 +217,7 @@
     & .icon-exp-education{
         width: 25px;
         height: 25px;
-        color: $color__primary;
+        color: var(--color-primary);
         transform: translateY(-3px);
         flex: none;
     }
@@ -230,7 +230,7 @@
         display: flex;
         gap: 20px;
         align-items: center;
-        color: $color__primary;
+        color: var(--color-primary);
 
         & .icon-calendar{
             width: 15px;
@@ -243,7 +243,7 @@
     //---------------- MAIN__EDUCATION 
 
     &__education{
-        background-color: $blanc;
+        background-color: var(--color-section);
         padding: 45px 10px;
         margin-top: 30px;
         @include boxShadow-section();
@@ -264,8 +264,8 @@
         }
 
         & .aujourdhui{
-            background-color: $color__primary;
-            color: $blanc;
+            background-color: var(--color-primary);
+            color: white;
             display: inline-block;
             padding: 2px 6px;
             border-radius: 5px;
