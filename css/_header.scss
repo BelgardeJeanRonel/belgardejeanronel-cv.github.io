@@ -42,10 +42,11 @@
 
             .theme-button{
                 border: none;
-                width: 1.9em;
-                height: 100%;
+                width: 1.7em;
+                height: 1.7em;
                 border-radius: 50%;
                 cursor: pointer;
+                transform: translateY(7%);
             }
 
             #theme-red{
