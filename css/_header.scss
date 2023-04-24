@@ -18,61 +18,11 @@
             color: white;
         }
 
-        #theme-switch{
-            color: white;
-            transform: translateY(22%);
-            cursor: pointer;
-            font-size: 1.2em;
+    }
 
-            &:hover{
-                color: rgb(233, 233, 233);
-            }
-        }
-
-        .theme-color-switcher{
-            background: white;
-            display: flex;
-            gap: .5em;
-            height: 1.6em;
-            display: inline-block;
-            width: 6em;
-            border-radius: 1em;
-            transform: translateY(19%);
-            text-align: center;
-
-            .theme-button{
-                border: none;
-                width: 1.7em;
-                height: 1.7em;
-                border-radius: 50%;
-                cursor: pointer;
-                transform: translateY(7%);
-            }
-
-            #theme-red{
-                background: var(--theme-red);
-            }
-
-            #theme-red:hover{
-                background: var(--theme-red-alt);
-            }
-
-            #theme-green{
-                background: var(--theme-green);
-            }
-
-            #theme-green:hover{
-                background: var(--theme-green-alt);
-            }
-
-            #theme-blue{
-                background: var(--theme-blue);
-            }
-
-            #theme-blue:hover{
-                background: var(--theme-blue-alt);
-            }
-        }
+    .right{
+        display: flex;
+        gap: 1em;
     }
      
     &__menu{
@@ -150,19 +100,82 @@
         cursor: pointer;
     }
 
-    .projets{
-        display: none;
-
-        @include large-screen(){
-            display: inline-block;
-            padding: 0 10px;
-            color: white;
-            text-decoration: none;
-         }
-    }
-
     & a:hover{
         text-decoration: underline;
+    }
+
+    .projets-theme{
+        display: flex;
+        gap: .5em;
+
+        #theme-switch{
+            color: white;
+            transform: translateY(10%);
+            cursor: pointer;
+            font-size: 1.6em;
+
+            &:hover{
+                color: rgb(233, 233, 233);
+            }
+        }
+
+        .theme-color-switcher{
+            background: white;
+            display: flex;
+            // gap: .5em;
+            height: 80%;
+            display: inline-block;
+            width: 6em;
+            border-radius: 1em;
+            text-align: center;
+            // align-self: center;
+        }
+
+        .theme-button{
+            border: none;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+            transform: translateY(15%);
+        }
+
+        #theme-red{
+            background: var(--theme-red);
+        }
+
+        #theme-red:hover{
+            background: var(--theme-red-alt);
+        }
+
+        #theme-green{
+            background: var(--theme-green);
+        }
+
+        #theme-green:hover{
+            background: var(--theme-green-alt);
+        }
+
+        #theme-blue{
+            background: var(--theme-blue);
+        }
+
+        #theme-blue:hover{
+            background: var(--theme-blue-alt);
+        }
+
+        .projets{
+            display: none;
+            align-self: center;
+    
+            @include large-screen(){
+                display: inline-block;
+                padding: 0 10px;
+                color: white;
+                text-decoration: none;
+             }
+        }
     }
     
 }
