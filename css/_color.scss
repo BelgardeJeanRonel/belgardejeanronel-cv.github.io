@@ -9,8 +9,12 @@
     --theme-blue-alt: rgb(56, 101, 152);
     --theme-green:  #296;
     --theme-green-alt:  rgb(28, 123, 82);
+    --bg-competences: rgb(212, 212, 212);
+    --bg-profil: rgb(212, 212, 212);
 
 
+
+// #296
 
 
     --color-section : var(--section);
@@ -19,5 +23,6 @@
     --color-shadow : var(--shadow);
     --color-primary : var(--theme-red);
     --color-primary-alt : var(--theme-red-alt);
+    --color-bg-profil: var(--bg-profil);
 }
 

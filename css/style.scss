@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-// $color__primary : rgb(161, 38, 45);
-$bg-profil : rgb(212, 212, 212);
-
-// rgb(243, 74, 52)
-// rgb(161, 38, 45)
-
-
-
 @import "_color";
 
 .theme-dark{
@@ -17,6 +9,8 @@ $bg-profil : rgb(212, 212, 212);
     --color-body: rgba(16, 16, 16, 0.89);
     --color-text: rgba(255, 255, 255, 0.901);
     --color-shadow: rgba(97, 97, 97, 0.908);
+    --color-bg-profil: rgb(31, 29, 29);
+
 }
 
 

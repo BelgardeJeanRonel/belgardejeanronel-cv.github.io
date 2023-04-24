@@ -13,12 +13,15 @@
   --theme-blue-alt: rgb(56, 101, 152);
   --theme-green: #296;
   --theme-green-alt: rgb(28, 123, 82);
+  --bg-competences: rgb(212, 212, 212);
+  --bg-profil: rgb(212, 212, 212);
   --color-section: var(--section);
   --color-body: var(--body);
   --color-text: var(--text);
   --color-shadow: var(--shadow);
   --color-primary: var(--theme-red);
   --color-primary-alt: var(--theme-red-alt);
+  --color-bg-profil: var(--bg-profil);
 }
 
 .theme-dark {
@@ -26,6 +29,7 @@
   --color-body: rgba(16, 16, 16, 0.89);
   --color-text: rgba(255, 255, 255, 0.901);
   --color-shadow: rgba(97, 97, 97, 0.908);
+  --color-bg-profil: rgb(31, 29, 29);
 }
 
 body {
@@ -168,7 +172,7 @@ ul {
 }
 .header .projets-theme #theme-switch {
   color: white;
-  transform: translateY(10%);
+  transform: translateY(9%);
   cursor: pointer;
   font-size: 1.6em;
 }
@@ -191,7 +195,7 @@ ul {
   border-radius: 50%;
   cursor: pointer;
   display: inline-block;
-  transform: translateY(15%);
+  transform: translateY(13%);
 }
 .header .projets-theme #theme-red {
   background: var(--theme-red);
@@ -214,6 +218,7 @@ ul {
 .header .projets-theme .projets {
   display: none;
   align-self: center;
+  transform: translateY(-10%);
 }
 @media screen and (min-width: 790px) {
   .header .projets-theme .projets {
@@ -251,7 +256,7 @@ ul {
 }
 .main__profil__header > div:first-child {
   position: relative;
-  background-color: rgb(212, 212, 212);
+  background-color: var(--color-bg-profil);
   padding: 30px 0;
   margin-bottom: 30px;
 }
@@ -271,7 +276,7 @@ ul {
 .main__profil__header > div:first-child h1 {
   position: absolute;
   bottom: -18px;
-  color: rgb(51, 50, 50);
+  color: var(--color-primary);
   font-weight: lighter;
   left: 50%;
   transform: translate(-50%);
@@ -294,14 +299,14 @@ ul {
   margin-top: 15px;
 }
 .main__profil__competences h3 {
-  border-top: 1px solid rgb(212, 212, 212);
+  border-top: 1px solid var(--bg-competences);
   padding-top: 40px;
   display: flex;
   gap: 20px;
   font-size: 1em;
 }
 .main__profil__competences > div {
-  background-color: rgb(212, 212, 212);
+  background-color: var(--bg-competences);
   border-radius: 20px;
   text-align: center;
 }
@@ -350,7 +355,7 @@ ul {
   gap: 20px;
 }
 .main__profil__langues > div {
-  background-color: rgb(212, 212, 212);
+  background-color: var(--bg-competences);
   border-radius: 20px;
 }
 .main__profil__langues .francais {
@@ -411,7 +416,7 @@ ul {
 .main__expProfessionnelles > div:nth-child(2) {
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid rgb(212, 212, 212);
+  border-bottom: 1px solid var(--bg-competences);
 }
 .main .icon-exp-education {
   width: 25px;
@@ -450,7 +455,7 @@ ul {
 .main__education > div:not(div:nth-child(4)) {
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid rgb(212, 212, 212);
+  border-bottom: 1px solid var(--bg-competences);
 }
 .main__education .aujourdhui {
   background-color: var(--color-primary);
@@ -489,8 +494,8 @@ ul {
   text-decoration: none;
 }
 .footer .projets a:hover {
-  background-color: rgb(70, 70, 70);
-  color: white;
+  color: var(--bg-competences);
+  color: var(--color-primary);
   transition: 1s;
   transform: scale(1.2);
 }
@@ -514,7 +519,7 @@ ul {
   height: 25px;
 }
 .footer .reseaux a:hover {
-  color: rgb(212, 212, 212);
+  color: var(--bg-competences);
   transition: 1s;
   transform: scale(1.3);
 }

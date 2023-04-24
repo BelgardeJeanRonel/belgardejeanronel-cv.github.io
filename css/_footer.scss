@@ -29,8 +29,8 @@
             text-decoration: none;
 
             &:hover{
-                background-color: rgb(70, 70, 70);
-                color: white;
+                color: var(--bg-competences);
+                color: var(--color-primary);
                 transition: 1s;
                 transform: scale(1.2);
             }
@@ -63,7 +63,7 @@
             height: 25px;
 
             &:hover{
-                color: $bg-profil;
+                color: var(--bg-competences);
                 transition: 1s;
                 transform: scale(1.3);
             }
