@@ -1,4 +1,4 @@
-import { eventClickThemeColor } from "./functions.js";
+import { eventClickThemeColor, getItemInLocalStorage, isActive, moveToLocalStorage } from "./functions.js";
 
 const iconOpenMenu = document.querySelector(".icon__open");
 const backgroundModal = document.querySelector(".bg-modal");
@@ -105,13 +105,37 @@ themeSwitch.addEventListener("click", function (){
     }else{
         themeSwitch.className = "fa fa-moon-o";
     }
+
+    const isDarkMode = isActive(body, "theme-dark");
+
+    moveToLocalStorage("darkMode", isDarkMode);
 })
 
+const isDarkMode = getItemInLocalStorage("darkMode");
+
+if (isDarkMode) {
+    document.body.classList.add("theme-dark");
+}
+
 const themeRed = document.querySelector("#theme-red");
-eventClickThemeColor(themeRed, body, "theme-red", "theme-green", "theme-blue");
+eventClickThemeColor(themeRed, body, "theme-red", "theme-green", "theme-blue", "colorRed", "colorGreen", "colorBlue");
+const isThemeRed = getItemInLocalStorage("colorRed");
+if (isThemeRed) {
+    document.body.classList.add("theme-red");
+}
 
 const themeGreen = document.querySelector("#theme-green");
-eventClickThemeColor(themeGreen, body, "theme-green", "theme-red", "theme-blue");
+eventClickThemeColor(themeGreen, body, "theme-green", "theme-red", "theme-blue", "colorGreen", "colorRed", "colorBlue");
+const isThemeGreen = getItemInLocalStorage("colorGreen");
+if (isThemeGreen) {
+    document.body.classList.add("theme-green");
+}
 
 const themeBlue = document.querySelector("#theme-blue");
-eventClickThemeColor(themeBlue, body, "theme-blue", "theme-green", "theme-red");
+eventClickThemeColor(themeBlue, body, "theme-blue", "theme-green", "theme-red", "colorBlue", "colorGreen", "colorRed");
+const isThemeBlue = getItemInLocalStorage("colorBlue");
+if (isThemeBlue) {
+    document.body.classList.add("theme-blue");
+}
+
+
