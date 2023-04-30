@@ -40,21 +40,6 @@ body {
   background-color: var(--color-body);
 }
 
-.theme-red {
-  --color-primary: var(--theme-red);
-  --color-primary-alt: var(--theme-red-alt);
-}
-
-.theme-green {
-  --color-primary: var(--theme-green);
-  --color-primary-alt: var(--theme-green-alt);
-}
-
-.theme-blue {
-  --color-primary: var(--theme-blue);
-  --color-primary-alt: var(--theme-blue-alt);
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -178,42 +163,6 @@ ul {
 }
 .header .projets-theme #theme-switch:hover {
   color: rgb(233, 233, 233);
-}
-.header .projets-theme .theme-color-switcher {
-  background: white;
-  display: flex;
-  height: 80%;
-  display: inline-block;
-  width: 6em;
-  border-radius: 1em;
-  text-align: center;
-}
-.header .projets-theme .theme-button {
-  border: none;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  cursor: pointer;
-  display: inline-block;
-  transform: translateY(13%);
-}
-.header .projets-theme #theme-red {
-  background: var(--theme-red);
-}
-.header .projets-theme #theme-red:hover {
-  background: var(--theme-red-alt);
-}
-.header .projets-theme #theme-green {
-  background: var(--theme-green);
-}
-.header .projets-theme #theme-green:hover {
-  background: var(--theme-green-alt);
-}
-.header .projets-theme #theme-blue {
-  background: var(--theme-blue);
-}
-.header .projets-theme #theme-blue:hover {
-  background: var(--theme-blue-alt);
 }
 .header .projets-theme .projets {
   display: none;
@@ -468,7 +417,7 @@ ul {
 aside {
   max-width: 1250px;
   margin: 70px auto 120px;
-  padding: 0 15px 70px;
+  padding: 0 15px;
 }
 aside .aside__title {
   color: var(--color-primary);
@@ -481,6 +430,7 @@ aside .container--slideShow iframe {
   width: 100%;
   height: 300px;
   background-color: white;
+  border: 1px solid var(--color-primary);
 }
 @media screen and (min-width: 790px) {
   aside .container--slideShow iframe {
@@ -556,7 +506,7 @@ aside .container--dot .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;

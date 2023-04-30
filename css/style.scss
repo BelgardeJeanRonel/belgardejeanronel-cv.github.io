@@ -23,21 +23,6 @@ body{
 
 }
 
-.theme-red{
-    --color-primary: var(--theme-red);
-    --color-primary-alt: var(--theme-red-alt);
-}
-
-.theme-green{
-    --color-primary: var(--theme-green);
-    --color-primary-alt: var(--theme-green-alt);
-}
-
-.theme-blue{
-    --color-primary: var(--theme-blue);
-    --color-primary-alt: var(--theme-blue-alt);
-}
-
 ul{
     list-style: none;
     padding: 0;

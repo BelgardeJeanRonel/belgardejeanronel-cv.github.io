@@ -1,4 +1,4 @@
-import { eventClickThemeColor, getItemInLocalStorage, isActive, moveToLocalStorage } from "./functions.js";
+import { getItemInLocalStorage, isActive, moveToLocalStorage } from "./functions.js";
 import { menu } from "./menu.js";
 import { scrollingAnimation } from "./scrollingAppearance.js";
 import { slideShow } from "./slide.js";
