@@ -468,7 +468,7 @@ ul {
 aside {
   max-width: 1250px;
   margin: 70px auto 120px;
-  padding: 0 15px;
+  padding: 0 15px 70px;
 }
 aside .aside__title {
   color: var(--color-primary);
@@ -480,6 +480,7 @@ aside .container--slideShow {
 aside .container--slideShow iframe {
   width: 100%;
   height: 300px;
+  background-color: white;
 }
 @media screen and (min-width: 790px) {
   aside .container--slideShow iframe {

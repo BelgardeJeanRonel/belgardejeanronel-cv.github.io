@@ -1,6 +1,5 @@
 import { eventClickThemeColor, getItemInLocalStorage, isActive, moveToLocalStorage } from "./functions.js";
 
-
 export const theme = {
     iniit : function() {
         const themeSwitch = document.querySelector("#theme-switch");

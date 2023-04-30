@@ -29,6 +29,3 @@ export function moveToLocalStorage(keyLocalStarage, value) {
 export function getItemInLocalStorage(key) {
     return JSON.parse(localStorage.getItem(key));
 }
-// const isDarkMode = document.body.classList.contains("theme-dark");
-
-//     localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
