@@ -13,10 +13,6 @@ export function eventClickThemeColor (themeName, body, classThemePrimary, classt
         const isThemeSecondary2 = isActive(body, classthemeSecondary2);
         moveToLocalStorage(keyColorSec2, isThemeSecondary2);
 
-
-
-        // console.log(isTheme);
-
     })
 }
 
