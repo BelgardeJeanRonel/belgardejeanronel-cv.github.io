@@ -400,21 +400,21 @@ aside .aside__title {
 aside .container--slideShow {
   position: relative;
 }
-aside .container--slideShow iframe {
+aside .container--slideShow img {
   width: 100%;
-  height: 300px;
-  background-color: white;
+  height: 100%;
   border: 1px solid var(--color-primary);
 }
 @media screen and (min-width: 790px) {
-  aside .container--slideShow iframe {
-    height: 500px;
+  aside .container--slideShow img {
+    height: 100%;
   }
 }
 aside .container--slideShow .prev, aside .container--slideShow .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   width: auto;
   padding: 8px;
   color: white;
