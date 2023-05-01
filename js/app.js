@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", menu.init);
 
 document.addEventListener("DOMContentLoaded", scrollingAnimation.init);
 
-document.addEventListener("DOMContentLoaded", theme.iniit);
+document.addEventListener("DOMContentLoaded", theme.init);
 
-document.addEventListener("DOMContentLoaded", slideShow.init);
+// document.addEventListener("DOMContentLoaded", slideShow.init);
+
+slideShow.init();
 
 
 
