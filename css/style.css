@@ -62,7 +62,7 @@ ul {
   }
 }
 .header {
-  padding: 7px 20px 2px;
+  padding: 7px 20px 0px;
   display: flex;
   justify-content: space-between;
   background-color: var(--color-primary);
@@ -169,10 +169,13 @@ ul {
   align-self: center;
   transform: translateY(-10%);
 }
+.header .projets-theme .projets:hover {
+  text-decoration: underline;
+}
 @media screen and (min-width: 790px) {
   .header .projets-theme .projets {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0px 10px 2px;
     color: white;
     text-decoration: none;
   }
