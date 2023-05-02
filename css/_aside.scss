@@ -9,6 +9,17 @@ aside{
     .aside__title{
         color: var(--color-text);
         text-align: center;
+
+        &::after{
+            display: inline-block;
+            content: "(toucher pour voir le projet \1F447)";
+        }
+
+        @include large-screen() {
+            &::after{
+                content: "(cliquer pour voir le projet \1F447)";
+            }
+        }
     }
 
     .container--slideShow{

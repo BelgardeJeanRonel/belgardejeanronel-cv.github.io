@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -400,6 +401,15 @@ aside {
 aside .aside__title {
   color: var(--color-text);
   text-align: center;
+}
+aside .aside__title::after {
+  display: inline-block;
+  content: "(toucher pour voir le projet 👇)";
+}
+@media screen and (min-width: 790px) {
+  aside .aside__title::after {
+    content: "(cliquer pour voir le projet 👇)";
+  }
 }
 aside .container--slideShow {
   position: relative;
