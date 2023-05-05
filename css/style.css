@@ -258,7 +258,7 @@ ul {
   padding: 50px 10px 0;
 }
 .main .container-left .softSkills ul {
-  padding: 0 1em;
+  padding: 0 30px;
 }
 .main .container-left .softSkills ul li::before {
   content: "•";
@@ -360,7 +360,7 @@ ul {
   border-radius: 5px;
 }
 .main .container-right .education ul {
-  padding: 0 1em;
+  padding: 0 20px;
 }
 .main .container-right .education ul li::before {
   content: "•";
