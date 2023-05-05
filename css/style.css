@@ -194,40 +194,39 @@ ul {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    grid-template-rows: auto auto;
   }
 }
-.main__profil {
+.main .container-left {
   background-color: var(--color-section);
   margin-top: 60px;
   box-shadow: 0px 0px 10px 0px var(--color-shadow);
   padding-bottom: 30px;
 }
 @media screen and (min-width: 790px) {
-  .main__profil {
+  .main .container-left {
     margin-top: 30px;
   }
 }
-.main__profil__header > div:first-child {
+.main .container-left .picture-profil {
   position: relative;
   background-color: var(--color-bg-profil);
   padding: 50px 0;
   margin-bottom: 30px;
 }
-.main__profil__header > div:first-child div {
+.main .container-left .picture-profil div {
   width: 60%;
   margin: auto;
 }
-.main__profil__header > div:first-child img {
+.main .container-left .picture-profil img {
   border-radius: 50%;
   padding: 4px;
   border: 1px solid var(--color-primary);
 }
-.main__profil__header > div:first-child img:hover {
+.main .container-left .picture-profil img:hover {
   transform: scale(1.05);
   transition: 1s;
 }
-.main__profil__header > div:first-child h1 {
+.main .container-left .picture-profil h1 {
   position: absolute;
   bottom: -3px;
   color: var(--color-primary);
@@ -236,95 +235,87 @@ ul {
   transform: translate(-50%);
   white-space: nowrap;
 }
-.main__profil__header > div:not(div:first-child) {
+.main .container-left > div:not(div:first-child) {
   padding: 0 10px;
   display: flex;
   gap: 15px;
   margin-top: 15px;
 }
-.main__profil__header > div:not(div:first-child) .icon-profil {
+.main .container-left > div:not(div:first-child) .icon-profil {
   width: 25px;
   height: 25px;
   color: var(--color-primary);
   flex: none;
 }
-.main__profil .aPropos {
-  margin-top: 2em;
+.main .container-left .aPropos {
+  margin-top: 50px;
   padding: 0 10px;
 }
-.main__profil .aPropos h3 {
+.main .container-left .aPropos h3 {
   font-size: 1.2em;
 }
-.main__profil__competences {
-  padding: 10px;
-  margin-top: 15px;
+.main .container-left .softSkills {
+  padding: 50px 10px 0;
 }
-.main__profil__competences .competences__icon {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin-top: 10px;
+.main .container-left .softSkills ul {
+  padding: 0 1em;
 }
-@media screen and (min-width: 790px) {
-  .main__profil__competences .competences__icon {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
+.main .container-left .softSkills ul li::before {
+  content: "•";
+  color: var(--color-primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.2em;
 }
-.main__profil__competences .competences__icon div {
-  text-align: center;
-}
-.main__profil__competences .competences__icon div p {
+.main .container-left .softSkills h2 {
+  display: flex;
   margin-top: 0;
-}
-.main__profil__competences .competences__icon img {
-  width: 40px;
-}
-.main__profil__competences h3 {
-  border-top: 1px solid var(--bg-competences);
-  padding-top: 40px;
-  display: flex;
   gap: 20px;
-  font-size: 1em;
+  align-items: center;
+  font-size: 1.2em;
 }
-.main__profil__softSkills {
-  padding: 10px;
-  margin-top: 15px;
+.main .container-left .icon-titre {
+  width: 25px;
+  height: 25px;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  flex: none;
 }
-.main__profil__softSkills ul {
-  list-style: disc;
-  padding: 1em;
+.main .container-left .langues {
+  padding: 50px 10px 0;
 }
-.main__profil__langues {
-  padding: 0 10px;
-  margin-top: 30px;
-}
-.main__profil__langues h3 {
+.main .container-left .langues h2 {
   display: flex;
+  margin-top: 0;
   gap: 20px;
+  align-items: center;
+  font-size: 1.2em;
 }
-.main__profil__langues > div {
+.main .container-left .langues > div {
   background-color: var(--bg-competences);
   border-radius: 20px;
 }
-.main__profil__langues .francais {
+.main .container-left .langues .francais {
   width: 100%;
   background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
-.main__profil__langues .creole {
+.main .container-left .langues .creole {
   width: 100%;
   background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
-.main__profil__langues .espagnol {
+.main .container-left .langues .espagnol {
   width: 90%;
   background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
 }
-.main__profil__langues .anglais {
+.main .container-left .langues .anglais {
   width: 30%;
   background-color: var(--color-primary);
   border-radius: 20px;
@@ -332,27 +323,58 @@ ul {
   color: white;
   text-align: center;
 }
-.main .icon-comp-langues {
-  width: 20px;
-  height: 20px;
-  align-self: center;
-  color: var(--color-primary);
-  flex: none;
-}
 .main p {
   margin-bottom: 0;
 }
-.main__expProfessionnelles {
-  padding: 70px 0;
+.main .container-right {
+  padding: 10px 10px;
   margin-top: 30px;
+  box-shadow: 0px 0px 10px 0px var(--color-shadow);
+  background-color: var(--color-section);
 }
 @media screen and (min-width: 790px) {
-  .main__expProfessionnelles {
-    margin-top: 0;
-    padding: 200px 0px 0;
+  .main .container-right {
+    margin-top: 30px;
   }
 }
-.main__expProfessionnelles h2 {
+.main .container-right .education {
+  padding: 30px 0 0;
+}
+.main .container-right .education h2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.main .container-right .education > div:not(div:nth-child(4)) {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--bg-competences);
+}
+.main .container-right .education .aujourdhui {
+  background-color: var(--color-primary);
+  color: white;
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+.main .container-right .education ul {
+  padding: 0 1em;
+}
+.main .container-right .education ul li::before {
+  content: "•";
+  color: var(--color-primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.2em;
+}
+.main .container-right .experiences {
+  padding-top: 50px;
+}
+.main .container-right .experiences h2 {
   display: flex;
   margin-top: 0;
   gap: 20px;
@@ -360,17 +382,47 @@ ul {
   font-size: 1.2em;
   margin-bottom: 30px;
 }
-.main__expProfessionnelles > div:nth-child(2) {
+.main .container-right .experiences > div:nth-child(2) {
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid var(--bg-competences);
 }
-.main .icon-exp-education {
+.main .container-right .icon-titre {
   width: 25px;
   height: 25px;
   color: var(--color-primary);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   flex: none;
+}
+.main .container-right .competences {
+  padding-top: 50px;
+}
+.main .container-right .competences .competences__icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 790px) {
+  .main .container-right .competences .competences__icon {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+.main .container-right .competences .competences__icon div {
+  text-align: center;
+}
+.main .container-right .competences .competences__icon div p {
+  margin-top: 0;
+}
+.main .container-right .competences .competences__icon img {
+  width: 40px;
+}
+.main .container-right .competences h2 {
+  display: flex;
+  margin-top: 0;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.2em;
 }
 .main h3 {
   font-size: 1em;
@@ -384,44 +436,6 @@ ul {
 .main span .icon-calendar {
   width: 15px;
   height: 15px;
-}
-.main__education {
-  background-color: var(--color-section);
-  padding: 45px 10px;
-  margin-top: 30px;
-  box-shadow: 0px 0px 10px 0px var(--color-shadow);
-}
-.main__education h2 {
-  display: flex;
-  margin-top: 0;
-  gap: 20px;
-  align-items: center;
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-.main__education > div:not(div:nth-child(4)) {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid var(--bg-competences);
-}
-.main__education .aujourdhui {
-  background-color: var(--color-primary);
-  color: white;
-  display: inline-block;
-  padding: 2px 6px;
-  border-radius: 5px;
-}
-.main__education ul {
-  padding: 0 1em;
-}
-.main__education ul li::before {
-  content: "•";
-  color: var(--color-primary);
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-  font-size: 1.2em;
 }
 
 aside {

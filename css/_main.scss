@@ -8,12 +8,11 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 20px;
-        grid-template-rows: auto auto;
-     }
+    }
 
-    //---------------- MAIN__PROFIL 
+    //---------------- CONATAINER LEFT 
 
-    &__profil{
+    .container-left{
         background-color: var(--color-section);
         margin-top: 60px;
         @include boxShadow-section();
@@ -24,7 +23,7 @@
             margin-top: 30px;
         }
 
-        &__header > div:first-child{
+        .picture-profil{
             position: relative;
             background-color: var(--color-bg-profil);
             padding: 50px 0;
@@ -57,7 +56,7 @@
 
         }
 
-        &__header > div:not(div:first-child){
+        & > div:not(div:first-child){
             padding: 0 10px;
             display: flex;
             gap: 15px;
@@ -73,7 +72,7 @@
         }
 
         .aPropos{
-            margin-top: 2em;
+            margin-top: 50px;
             padding: 0 10px;
             
             h3{
@@ -81,62 +80,41 @@
             }
         }
 
-        &__competences{
-            padding: 10px;
-            margin-top: 15px;
+        //---------------- SOFT SKILLS
 
-            .competences__icon{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 20px;
-                margin-top: 10px;
-                @include large-screen(){
-                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                }
-
-                div{
-                    text-align: center;
-
-                    p{
-                        margin-top: 0;  
-                    }
-                }
-
-                img{
-                    width: 40px;
-                }
-            }
-
-            & h3{
-                border-top: 1px solid var(--bg-competences);
-                padding-top: 40px;
-                display: flex;
-                gap: 20px;
-                font-size: 1em;
-            }
-
+        .softSkills{
+            padding: 50px 10px 0;
         
+            ul {
+                padding: 0 1em;
+    
+                li::before{
+                    content: "\2022";
+                    color: var(--color-primary);
+                    font-weight: bold;
+                    display: inline-block; 
+                    width: 1em;
+                    margin-left: -1em;
+                    font-size: 1.2em;
+                }
+            }
 
-        }
-
-        &__softSkills{
-            padding: 10px;
-            margin-top: 15px;
+            @include titreSection();
             
-            ul{
-                list-style: disc;
-                padding: 1em;
-            }
         }
 
-        &__langues{
-            padding: 0 10px;
-            margin-top: 30px;
+        .icon-titre{
+            width: 25px;
+            height: 25px;
+            color: var(--color-primary);
+            transform: translateY(-2px);
+            flex: none;
+        }
 
-            & h3{
-                display: flex;
-                gap: 20px;
-            }
+        .langues{
+            padding: 50px 10px 0;
+
+            @include titreSection();
 
             & > div{
                 background-color: var(--bg-competences);
@@ -168,17 +146,8 @@
                 color: white;
                 text-align: center;
             }
-
         }
 
-    }
-
-    & .icon-comp-langues{
-        width: 20px;
-        height: 20px;
-        align-self: center;
-        color: var(--color-primary);
-        flex: none;
     }
 
     & p{
@@ -186,43 +155,132 @@
     }
 
 
-    //---------------- MAIN__EXPPROFESSIONNELLES 
+    
+    //---------------- CONATAINER RIGHT
 
-    &__expProfessionnelles{
-        // background-color: var(--color-section);
-        padding: 70px 0;
+
+    .container-right{
+        padding: 10px 10px;
         margin-top: 30px;
-        // @include boxShadow-section();
+        @include boxShadow-section();
+        background-color: var(--color-section);
+
 
         @include large-screen(){
-            margin-top: 0;
-            padding: 200px 0px 0;
-         }
-
-        & h2{
-            display: flex;
-            margin-top: 0;
-            gap: 20px;
-            align-items: center;
-            font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-top: 30px;
         }
 
-        & > div:nth-child(2){
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--bg-competences);
+
+    //---------------- EDUCATION 
+
+        .education{
+            padding: 30px 0 0;
+            
+            & h2{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                font-size: 1.2em;
+                margin-bottom: 30px;
+            }
+    
+            & > div:not(div:nth-child(4)){
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+                border-bottom: 1px solid var(--bg-competences);
+            }
+    
+            & .aujourdhui{
+                background-color: var(--color-primary);
+                color: white;
+                display: inline-block;
+                padding: 2px 6px;
+                border-radius: 5px;
+            }
+    
+    
+            ul {
+                padding: 0 1em;
+    
+                li::before{
+                    content: "\2022";
+                    color: var(--color-primary);
+                    font-weight: bold;
+                    display: inline-block; 
+                    width: 1em;
+                    margin-left: -1em;
+                    font-size: 1.2em;
+                }
+            }
+                
+        
+            
+        }
+
+    //---------------- EXPERIENCES
+
+        .experiences{
+            padding-top: 50px;
+
+            & h2{
+                display: flex;
+                margin-top: 0;
+                gap: 20px;
+                align-items: center;
+                font-size: 1.2em;
+                margin-bottom: 30px;
+            }
+
+            & > div:nth-child(2){
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+                border-bottom: 1px solid var(--bg-competences);
+            }
+        }
+
+        .icon-titre{
+            width: 25px;
+            height: 25px;
+            color: var(--color-primary);
+            transform: translateY(-2px);
+            flex: none;
+        }
+
+
+    //---------------- COMPETENCES
+    
+        .competences{
+            padding-top: 50px;
+
+            .competences__icon{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                margin-top: 30px;
+                @include large-screen(){
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                }
+
+                div{
+                    text-align: center;
+
+                    p{
+                        margin-top: 0;  
+                    }
+                }
+
+                img{
+                    width: 40px;
+                }
+            }
+
+            @include titreSection();
         }
 
     }
 
-    & .icon-exp-education{
-        width: 25px;
-        height: 25px;
-        color: var(--color-primary);
-        transform: translateY(-3px);
-        flex: none;
-    }
+
+   
 
     & h3{
         font-size: 1em;
@@ -238,56 +296,6 @@
             width: 15px;
             height: 15px;
         }
-
-    }
-    
-
-    //---------------- MAIN__EDUCATION 
-
-    &__education{
-        background-color: var(--color-section);
-        padding: 45px 10px;
-        margin-top: 30px;
-        @include boxShadow-section();
-
-        & h2{
-            display: flex;
-            margin-top: 0;
-            gap: 20px;
-            align-items: center;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-
-        & > div:not(div:nth-child(4)){
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--bg-competences);
-        }
-
-        & .aujourdhui{
-            background-color: var(--color-primary);
-            color: white;
-            display: inline-block;
-            padding: 2px 6px;
-            border-radius: 5px;
-        }
-
-
-        ul {
-            padding: 0 1em;
-
-            li::before{
-                content: "\2022";
-                color: var(--color-primary);
-                font-weight: bold;
-                display: inline-block; 
-                width: 1em;
-                margin-left: -1em;
-                font-size: 1.2em;
-            }
-        }
-        
 
     }
    
