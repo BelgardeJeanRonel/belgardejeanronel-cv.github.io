@@ -121,22 +121,12 @@
                 border-radius: 20px;
             }
 
-            & .francais{
-                width: 100%;
-                @include niveau();
-                height: 25px;
-            }
-
-            & .creole{
-                width: 100%;
-                @include niveau();
-                height: 25px;
-            }
-
             & .espagnol{
                 width: 90%;
                 @include niveau();
                 height: 25px;
+                color: white;
+                text-align: center;
             }
 
             & .anglais{

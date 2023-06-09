@@ -297,23 +297,13 @@ ul {
   background-color: var(--bg-competences);
   border-radius: 20px;
 }
-.main .container-left .langues .francais {
-  width: 100%;
-  background-color: var(--color-primary);
-  border-radius: 20px;
-  height: 25px;
-}
-.main .container-left .langues .creole {
-  width: 100%;
-  background-color: var(--color-primary);
-  border-radius: 20px;
-  height: 25px;
-}
 .main .container-left .langues .espagnol {
   width: 90%;
   background-color: var(--color-primary);
   border-radius: 20px;
   height: 25px;
+  color: white;
+  text-align: center;
 }
 .main .container-left .langues .anglais {
   width: 30%;
