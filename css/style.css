@@ -235,11 +235,21 @@ ul {
   transform: translate(-50%);
   white-space: nowrap;
 }
+.main .container-left a {
+  display: flex;
+  gap: 15px;
+  color: var(--color-text);
+  text-decoration: none;
+}
+.main .container-left a:hover {
+  text-decoration: underline;
+}
 .main .container-left > div:not(div:first-child) {
   padding: 0 10px;
   display: flex;
   gap: 15px;
   margin-top: 15px;
+  align-items: center;
 }
 .main .container-left > div:not(div:first-child) .icon-profil {
   width: 25px;

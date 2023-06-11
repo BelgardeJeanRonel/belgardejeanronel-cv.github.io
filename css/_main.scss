@@ -56,11 +56,23 @@
 
         }
 
+        a{
+            display: flex;
+            gap: 15px;
+            color: var(--color-text);
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
         & > div:not(div:first-child){
             padding: 0 10px;
             display: flex;
             gap: 15px;
             margin-top: 15px;
+            align-items: center;
 
             & .icon-profil{
                 width: 25px;
