@@ -254,6 +254,10 @@
         .competences{
             padding-top: 50px;
 
+            @include large-screen(){
+                padding-top: 0px;
+            }
+
             .competences__icon{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;

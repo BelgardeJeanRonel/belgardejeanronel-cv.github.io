@@ -8,7 +8,7 @@
   --body: rgb(238, 238, 238);
   --text: rgb(84, 84, 84);
   --shadow: rgba(0, 0, 0, 0.51);
-  --theme-red: rgb(187, 36, 44);
+  --theme-red: rgba(255, 115, 0, 0.777);
   --theme-red-alt: rgb(151, 36, 42);
   --theme-blue: rgb(68, 124, 187);
   --theme-blue-alt: rgb(56, 101, 152);
@@ -396,6 +396,11 @@ ul {
 }
 .main .container-right .competences {
   padding-top: 50px;
+}
+@media screen and (min-width: 790px) {
+  .main .container-right .competences {
+    padding-top: 0px;
+  }
 }
 .main .container-right .competences .competences__icon {
   display: grid;
