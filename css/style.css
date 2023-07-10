@@ -404,13 +404,13 @@ ul {
 }
 .main .container-right .competences .competences__icon {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-top: 30px;
 }
 @media screen and (min-width: 790px) {
   .main .container-right .competences .competences__icon {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 .main .container-right .competences .competences__icon div {
