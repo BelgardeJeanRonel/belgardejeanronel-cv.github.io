@@ -346,11 +346,10 @@ ul {
   align-items: center;
   font-size: 1.2em;
   margin-bottom: 30px;
+  border-bottom: 1px solid var(--bg-competences);
 }
 .main .container-right .education > div:not(div:nth-child(4)) {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid var(--bg-competences);
+  padding-bottom: 20px;
 }
 .main .container-right .education .aujourdhui {
   background-color: var(--color-primary);
@@ -381,11 +380,10 @@ ul {
   align-items: center;
   font-size: 1.2em;
   margin-bottom: 30px;
-}
-.main .container-right .experiences > div:nth-child(2) {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
   border-bottom: 1px solid var(--bg-competences);
+}
+.main .container-right .experiences > div {
+  margin-bottom: 30px;
 }
 .main .container-right .icon-titre {
   width: 25px;
@@ -396,6 +394,9 @@ ul {
 }
 .main .container-right .competences {
   padding-top: 50px;
+}
+.main .container-right .competences h2 {
+  border-bottom: 1px solid var(--bg-competences);
 }
 @media screen and (min-width: 790px) {
   .main .container-right .competences {

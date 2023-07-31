@@ -1,413 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV-JeanRonelBelgarde</title>
-    <link rel="shortcut icon" href="svg/fav-icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="svg/fav-icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="js/app.js" type="module"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <svg class="icon">
-                    <use xlink:href="svg/logo.svg#logo"></use>
-                </svg>
-            </a>
+      <div class="header__logo">
+        <a href="index.html">
+          <svg class="icon">
+            <use xlink:href="svg/logo.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="right">
+        <div class="projets-theme">
+          <i class="fa fa-moon-o" id="theme-switch"></i>
+
+          <a class="projets" href="#projets">Projets</a>
         </div>
 
-        <div class="right">
-            <div class="projets-theme">
-                <i class="fa fa-moon-o" id="theme-switch"></i>
-    
-                <a class="projets" href="#projets">Projets</a>
-            </div>
-
-            <section class="header__menu">
-                <svg class="icon__open">
-                    <use xlink:href="svg/spriteMenu.svg#open-menu"></use>
-                </svg>
-                <div class="bg-modal"></div>
-                <nav class="header__menu__nav">
-                    <svg class="icon__close">
-                        <use xlink:href="svg/spriteMenu.svg#close-menu"></use>
-                    </svg>
-                    <ul>
-                        <li><a href="#profil">Profil</a></li>
-                        <li><a href="#softSkills">Soft Skills</a></li>
-                        <li><a href="#langues">Langues</a></li>
-                        <li><a href="#competences">Compétences</a></li>
-                        <li><a href="#education">Formation</a></li>
-                        <li><a href="#experiences">Expériences</a></li>
-                        <li><a href="#projets">Projets</a></li>
-                    </ul>
-                </nav>            
-            </section>
-        </div>
-        
-
+        <section class="header__menu">
+          <svg class="icon__open">
+            <use xlink:href="svg/spriteMenu.svg#open-menu"></use>
+          </svg>
+          <div class="bg-modal"></div>
+          <nav class="header__menu__nav">
+            <svg class="icon__close">
+              <use xlink:href="svg/spriteMenu.svg#close-menu"></use>
+            </svg>
+            <ul>
+              <li><a href="#profil">Profil</a></li>
+              <li><a href="#softSkills">Soft Skills</a></li>
+              <li><a href="#langues">Langues</a></li>
+              <li><a href="#competences">Compétences</a></li>
+              <li><a href="#education">Formation</a></li>
+              <li><a href="#experiences">Expériences</a></li>
+              <li><a href="#projets">Projets</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
     </header>
 
     <main class="main">
+      <section class="container-left" id="profil">
+        <div class="picture-profil">
+          <div>
+            <img src="images/janjan.jpg" alt="Photo Profil" width="100%" />
+          </div>
+          <h1>Jean Ronel Belgarde</h1>
+        </div>
 
-        <section class="container-left" id="profil">
-            <div class="picture-profil">
-                <div><img src="images/janjan.jpg" alt="Photo Profil" width="100%"></div>
-                <h1>Jean Ronel Belgarde</h1>
-            </div>
+        <div>
+          <svg class="icon-profil">
+            <use xlink:href="svg/spriteIcon.svg#icon-sac-dev"></use>
+          </svg>
+          Développeur Web
+        </div>
+        <div>
+          <svg class="icon-profil">
+            <use xlink:href="svg/spriteContact.svg#localisation"></use>
+          </svg>
+          Paris, France
+        </div>
+        <div>
+          <a href="mailto:belganel@gmail.com">
+            <svg class="icon-profil">
+              <use xlink:href="svg/spriteContact.svg#message"></use>
+            </svg>
+            belganel@gmail.com
+          </a>
+        </div>
 
-            <div>
-                <svg class="icon-profil">
-                    <use xlink:href="svg/spriteIcon.svg#icon-sac-dev"></use>
-                </svg> Développeur Web
-            </div>
-            <div>
-                <svg class="icon-profil">
-                    <use xlink:href="svg/spriteContact.svg#localisation"></use>
-                </svg> Paris, France
-            </div>
-            <div>
-                <a href="mailto:belganel@gmail.com">
-                    <svg class="icon-profil">
-                        <use xlink:href="svg/spriteContact.svg#message"></use>
-                    </svg> belganel@gmail.com 
-                </a>
-            </div>
-           
-            <div>
-                <svg class="icon-profil">
-                    <use xlink:href="svg/spriteContact.svg#phone"></use>
-                </svg> +33 06 23 45 16 24
-            </div>
+        <div>
+          <svg class="icon-profil">
+            <use xlink:href="svg/spriteContact.svg#phone"></use>
+          </svg>
+          +33 06 23 45 16 24
+        </div>
 
-            <section class="aPropos">
-                <h3>À propos de moi</h3>
-                <p>Après avoir appris les bases du développement web sur Internet, j'ai décidé de suivre une formation à l'école O'clock pour élargir mes compétences et apprendre des nouvelles notions. Je me suis lancé dans cette voie, car j'aime réfléchir sur la résolution des problèmes. Aujourd'hui, je suis à la recherche d'une entreprise pour réaliser un stage de 2 à 6 mois à partir du 12 septembre 2023. Ce stage me permettra de développer et de mettre à votre disposition mes compétences.</p>
-            </section>
-
-            <section class="softSkills" id="softSkills">
-                <h2>
-                    <svg class="icon-titre">
-                        <use xlink:href="svg/spriteIcon.svg#icon-asteric"></use>
-                    </svg> SOFT SKILLS
-                </h2>
-                <ul>
-                    <li>Capacité d'adaptation</li>
-                    <li>Travail d'équipe</li>
-                    <li>Curiosité</li>
-                    <li>Autonomie</li>
-                </ul>
-            </section>
-
-            <section class="langues" id="langues">
-                <h2>
-                    <svg class="icon-titre">
-                        <use xlink:href="svg/spriteIcon.svg#icon-globe"></use>
-                    </svg> LANGUES
-                </h2>
-
-                <p>Espagnol</p>
-                <div><div class="espagnol">Courant</div></div>
-
-                <p>Anglais</p>
-                <div><div class="anglais">Technique</div></div>
-            </section>
-        </section>
-            
-
-        <section class="container-right">
-            <section class="competences" id="competences">
-                <h2>
-                    <svg class="icon-titre">
-                        <use xlink:href="svg/spriteIcon.svg#icon-asteric"></use>
-                    </svg> COMPÉTENCES TECHNIQUES
-                </h2>
-
-                <div class="competences__icon">
-                    <div>
-                        <img src="images/html-5.png" alt="HTML"><p>HTML</p>
-                    </div>
-                    <div>
-                        <img src="images/css-3.png" alt="CSS"><p>CSS</p>
-                    </div>
-                    <div>
-                        <img src="images/sass.jpg" alt="SASS"><p>SASS</p>
-                    </div>
-                    <div>
-                        <img src="images/js.png" alt="JAVASCRIPT"><p>JAVASCRIPT</p>
-                    </div>
-                    <div>
-                        <img src="images/php.png" alt="PHP"><p>PHP</p>
-                    </div>
-                    <div>
-                        <img src="images/mysql.png" alt="PHP"><p>MySQL</p>
-                    </div>
-                    <div>
-                        <img src="images/laravel.jpg" alt="PHP"><p>LARAVEL</p>
-                    </div>
-                    <div>
-                        <img src="images/react.png" alt="PHP"><p>REACT JS</p>
-                    </div>
-                </div>
-
-            </section>
-            <section class="education" id="education">
-                <h2>
-                    <svg class="icon-titre">
-                        <use xlink:href="svg/spriteIcon.svg#icon-diplome"></use>
-                    </svg> FORMATION
-                </h2>
-    
-                <div>
-                    <h3>Formation Développeur web et web mobile (Paris, France)</h3>
-                    <span>
-                        <svg class="icon-calendar">
-                            <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
-                        </svg> Mars 2023 - <span class="aujourdhui">Aujourd'hui</span>
-                    </span>
-                    <p>798 heures intensives | École O'clock en télé présentiel</p>
-                    <ul>
-                        <li>3 mois de socle : HTML5 / CSS3 / PHP / JAVASCRIPT / MySQL</li>
-                        <li>1 mois de spécialisation en ReactJS</li>
-                        <li>1 mois de projet de fin de formation</li>
-                    </ul>
-                </div>
-    
-                <div>
-                    <h3>Licence en systèmes informatiques (Buenos-Aires, Argentine)</h3>
-                    <span>
-                        <svg class="icon-calendar">
-                            <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
-                        </svg> Jan 2020 - Nov 2021
-                    </span>
-                    <p>J'ai appris la programmation à l'Université Nationale
-                        de Lanus. Après 2 ans d'études, j'ai dû quitter
-                        l'Argentine pour m'installer en France pour des raisons
-                        familiales.</p>
-                </div>
-    
-                <div>
-                    <h3>Baccalauréat général (Léogane, Haïti)</h3>
-                    <span>
-                        <svg class="icon-calendar">
-                            <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
-                        </svg> Juillet 2016
-                    </span>
-                    <p>Collège La Rédemption de Léogane.</p>
-                </div>
-            </section>
-
-            <section class="experiences" id="experiences">
-                <h2>
-                    <svg class="icon-titre">
-                        <use xlink:href="svg/spriteIcon.svg#icon-sac"></use>
-                    </svg> EXPÉRIENCES
-                </h2>
-
-                <div>
-                    <h3>Remplaçant de gardien
-                        d'immeuble (Courbevoie, France)</h3>
-                    <span>
-                        <svg class="icon-calendar">
-                            <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
-                        </svg> Avr 2022 - Juin 2022
-                    </span>
-                    <p>Réception et distribution des courriers et colis.</p>
-                </div>
-    
-                <div>
-                    <h3>Préparateur de boissons à
-                        l'association Feria Colectividades
-                        de Buenos-Aires</h3>
-                    <span>
-                        <svg class="icon-calendar">
-                            <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
-                        </svg> Déc 2017 - Jan 2021
-                    </span>
-                    <p>Préparateur de boissons. Grâce à ma capacité
-                        d'apprentissage et d'adaptation, j'avais fini par être
-                        chef d'équipe en 2020.</p>
-                </div>
-    
-            </section>
-
+        <section class="aPropos">
+          <h3>À propos de moi</h3>
+          <p>
+            Après avoir appris les bases du développement web sur Internet, j'ai
+            décidé de suivre une formation à l'école O'clock pour élargir mes
+            compétences et apprendre des nouvelles notions. Je me suis lancé
+            dans cette voie, car j'aime réfléchir sur la résolution des
+            problèmes. Aujourd'hui, je suis à la recherche d'une entreprise pour
+            réaliser un stage non rémunéré de 2 à 6 mois à partir du 12
+            septembre 2023. Ce stage me permettra de développer et de mettre à
+            votre disposition mes compétences.
+          </p>
         </section>
 
-            
+        <section class="softSkills" id="softSkills">
+          <h2>
+            <svg class="icon-titre">
+              <use xlink:href="svg/spriteIcon.svg#icon-asteric"></use>
+            </svg>
+            SOFT SKILLS
+          </h2>
+          <ul>
+            <li>Capacité d'adaptation</li>
+            <li>Travail d'équipe</li>
+            <li>Curiosité</li>
+            <li>Autonomie</li>
+            <li>Résolution de problème</li>
+            <li>Gestion de temps</li>
+          </ul>
+        </section>
+
+        <section class="langues" id="langues">
+          <h2>
+            <svg class="icon-titre">
+              <use xlink:href="svg/spriteIcon.svg#icon-globe"></use>
+            </svg>
+            LANGUES
+          </h2>
+
+          <p>Espagnol</p>
+          <div><div class="espagnol">Courant</div></div>
+
+          <p>Anglais</p>
+          <div><div class="anglais">Technique</div></div>
+        </section>
+      </section>
+
+      <section class="container-right">
+        <section class="competences" id="competences">
+          <h2>
+            <svg class="icon-titre">
+              <use xlink:href="svg/spriteIcon.svg#icon-asteric"></use>
+            </svg>
+            COMPÉTENCES TECHNIQUES
+          </h2>
+
+          <div class="competences__icon">
+            <div>
+              <img src="images/html-5.png" alt="HTML" />
+              <p>HTML</p>
+            </div>
+            <div>
+              <img src="images/css-3.png" alt="CSS" />
+              <p>CSS</p>
+            </div>
+            <div>
+              <img src="images/sass.jpg" alt="SASS" />
+              <p>SASS</p>
+            </div>
+            <div>
+              <img src="images/js.png" alt="JAVASCRIPT" />
+              <p>JAVASCRIPT</p>
+            </div>
+            <div>
+              <img src="images/php.png" alt="PHP" />
+              <p>PHP</p>
+            </div>
+            <div>
+              <img src="images/mysql.png" alt="PHP" />
+              <p>MySQL</p>
+            </div>
+            <div>
+              <img src="images/laravel.jpg" alt="PHP" />
+              <p>LARAVEL</p>
+            </div>
+            <div>
+              <img src="images/react.png" alt="PHP" />
+              <p>REACT JS</p>
+            </div>
+            <div>
+              <img src="images/redux.jpeg" alt="PHP" />
+              <p>REDUX</p>
+            </div>
+          </div>
+        </section>
+        <section class="education" id="education">
+          <h2>
+            <svg class="icon-titre">
+              <use xlink:href="svg/spriteIcon.svg#icon-diplome"></use>
+            </svg>
+            FORMATION
+          </h2>
+
+          <div>
+            <h3>Formation Développeur web et web mobile (Paris, France)</h3>
+            <span>
+              <svg class="icon-calendar">
+                <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
+              </svg>
+              Mars 2023 - <span class="aujourdhui">Aujourd'hui</span>
+            </span>
+            <p>798 heures intensives | École O'clock en télé présentiel</p>
+            <ul>
+              <li>3 mois de socle : HTML5 / CSS3 / PHP / JAVASCRIPT / MySQL</li>
+              <li>1 mois de spécialisation en ReactJS</li>
+              <li>1 mois de projet de fin de formation</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Licence en systèmes informatiques (Buenos-Aires, Argentine)</h3>
+            <span>
+              <svg class="icon-calendar">
+                <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
+              </svg>
+              Jan 2020 - Nov 2021
+            </span>
+            <p>
+              J'ai appris la programmation à l'Université Nationale de Lanus.
+              Après 2 ans d'études, j'ai dû quitter l'Argentine pour m'installer
+              en France pour des raisons familiales.
+            </p>
+          </div>
+
+          <div>
+            <h3>Baccalauréat général (Léogane, Haïti)</h3>
+            <span>
+              <svg class="icon-calendar">
+                <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
+              </svg>
+              Juillet 2016
+            </span>
+            <p>Collège La Rédemption de Léogane.</p>
+          </div>
+        </section>
+
+        <section class="experiences" id="experiences">
+          <h2>
+            <svg class="icon-titre">
+              <use xlink:href="svg/spriteIcon.svg#icon-sac"></use>
+            </svg>
+            EXPÉRIENCES
+          </h2>
+
+          <div>
+            <h3>École O'clock - Projet de fin de formation</h3>
+            <span>
+              <svg class="icon-calendar">
+                <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
+              </svg>
+              Août 2023
+            </span>
+            <p>
+              Réalisation d'une application web en équipe, de sa conception,
+              jusqu'au déploiement en méthodologie agile.
+            </p>
+          </div>
+
+          <div>
+            <h3>Remplaçant de gardien d'immeuble (Courbevoie, France)</h3>
+            <span>
+              <svg class="icon-calendar">
+                <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
+              </svg>
+              Avr 2022 - Juin 2022
+            </span>
+            <p>Réception et distribution des courriers et colis.</p>
+          </div>
+
+          <div>
+            <h3>
+              Préparateur de boissons à l'association Feria Colectividades de
+              Buenos-Aires
+            </h3>
+            <span>
+              <svg class="icon-calendar">
+                <use xlink:href="svg/spriteIcon.svg#icon-calendar"></use>
+              </svg>
+              Déc 2017 - Jan 2021
+            </span>
+            <p>
+                Préparateur de boissons  - Évolution vers le poste de  chef d'équipe en 2020  -  Satisfaction client
+            </p>
+          </div>
+        </section>
+      </section>
     </main>
 
     <aside id="projets">
-        <h3 class="aside__title">Quelques projets réalisés! </h3>
-        <div class="container--slideShow">
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/room-homepage/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/room-homepage.png">
-                        <img src="images/room-homepage-mobile.jpg">
-                    </picture> 
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                <div class="text">REACT JS</div>
-            </div>
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/jeanronel-modeleportfolio.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/portfolio.jpg">
-                        <img src="images/portfolio-mobile.jpg">
-                    </picture> 
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                <div class="text">HTML, CSS, JS</div>
-            </div>
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/dictionaryapp.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/dictionary.jpg">
-                        <img src="images/dictionary-mobile.jpg">
-                    </picture>
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                
-                <div class="text">HTML, CSS (Sass), JS, API</div>
-            </div>
-          
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/bandtemplatebjr.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/band-template.jpg">
-                        <img src="images/bandT-mobile.jpg">
-                    </picture>
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                
-              <div class="text">HTML, CSS, JS</div>
-            </div>
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/calculatorapp.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/age-calculator.jpg">
-                        <img src="images/calculator-mobile.jpg">
-                    </picture>
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                
-                <div class="text">HTML, CSS (Sass), JS</div>
-            </div>
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/robbie-lens.jpg">
-                        <img src="images/robbieLens-mobile.jpg">
-                    </picture>
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                
-                <div class="text">HTML, CSS, JS</div>
-            </div>
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/jeanronel-gourmetresto.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/gourmet-catering.jpg">
-                        <img src="images/gourmets-mobile.jpg">
-                    </picture>
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                
-                <div class="text">HTML, CSS</div>
-                
-            </div>
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/jeanronel-architectsbr.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/br-architects.jpg">
-                        <img src="images/brArchitect-mobile.jpg">
-                    </picture>
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                
-                <div class="text">HTML, CSS</div>
-            </div>
-
-            <div class="mySlides fade">
-                <a class="link-img" href="https://belgardejeanronel.github.io/jeanronel-parallaxtemplate.github.io/" target="_blank">
-                    <picture>
-                        <source media="(min-width: 790px)" srcset="images/parallax-template.jpg">
-                        <img src="images/parallaxT-mobile.jpg">
-                    </picture>
-                    <span>Voir le projet <i class="fa fa-external-link"></i></span>
-                </a>
-                
-                <div class="text">HTML, CSS</div>
-            </div>
-          
-           
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+      <h3 class="aside__title">Quelques projets réalisés!</h3>
+      <div class="container--slideShow">
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/room-homepage/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/room-homepage.png"
+              />
+              <img src="images/room-homepage-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+          <div class="text">REACT JS</div>
         </div>
 
-        <div class="container--dot">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/jeanronel-modeleportfolio.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/portfolio.jpg"
+              />
+              <img src="images/portfolio-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+          <div class="text">HTML, CSS, JS</div>
         </div>
+
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/dictionaryapp.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/dictionary.jpg"
+              />
+              <img src="images/dictionary-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+
+          <div class="text">HTML, CSS (Sass), JS, API</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/bandtemplatebjr.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/band-template.jpg"
+              />
+              <img src="images/bandT-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+
+          <div class="text">HTML, CSS, JS</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/calculatorapp.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/age-calculator.jpg"
+              />
+              <img src="images/calculator-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+
+          <div class="text">HTML, CSS (Sass), JS</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/robbie-lens.jpg"
+              />
+              <img src="images/robbieLens-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+
+          <div class="text">HTML, CSS, JS</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/jeanronel-gourmetresto.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/gourmet-catering.jpg"
+              />
+              <img src="images/gourmets-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+
+          <div class="text">HTML, CSS</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/jeanronel-architectsbr.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/br-architects.jpg"
+              />
+              <img src="images/brArchitect-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+
+          <div class="text">HTML, CSS</div>
+        </div>
+
+        <div class="mySlides fade">
+          <a
+            class="link-img"
+            href="https://belgardejeanronel.github.io/jeanronel-parallaxtemplate.github.io/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(min-width: 790px)"
+                srcset="images/parallax-template.jpg"
+              />
+              <img src="images/parallaxT-mobile.jpg" />
+            </picture>
+            <span>Voir le projet <i class="fa fa-external-link"></i></span>
+          </a>
+
+          <div class="text">HTML, CSS</div>
+        </div>
+
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+
+      <div class="container--dot">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </aside>
 
     <footer class="footer">
-        <div class="reseaux">
-            <h4>Réseaux sociaux<span class="emoji">&#128071;</span></h4>
+      <div class="reseaux">
+        <h4>Réseaux sociaux<span class="emoji">&#128071;</span></h4>
 
-            <div class="reveal reveal-3">
-                <a href="https://www.facebook.com/BelgardeJ/" target="_blank"> 
-                    <svg class="icon-reseau">
-                        <use xlink:href="svg/spriteReseau.svg#facebook"></use>
-                    </svg>
-                </a>
-                
-                <a href="https://www.instagram.com/kingkito20/" target="_blank">
-                    <svg class="icon-reseau">
-                        <use xlink:href="svg/spriteReseau.svg#instagram"></use>
-                    </svg>
-                </a>
-                  
-                <a href="https://www.linkedin.com/in/jean-ronel-belgarde-944736271/" target="_blank">
-                    <svg class="icon-reseau">
-                        <use xlink:href="svg/spriteReseau.svg#linkedin"></use>
-                    </svg>
-                </a>
-    
-                <a href="mailto:belganel@gmail.com">
-                    <svg class="icon-reseau">
-                        <use xlink:href="svg/spriteReseau.svg#email"></use>
-                    </svg>
-                </a>
-    
-                <a href="https://github.com/BelgardeJeanRonel" target="_blank">
-                    <svg class="icon-reseau">
-                        <use xlink:href="svg/spriteReseau.svg#github"></use>
-                    </svg>
-                </a>
-            </div>
-            
-              
+        <div class="reveal reveal-3">
+          <a href="https://www.facebook.com/BelgardeJ/" target="_blank">
+            <svg class="icon-reseau">
+              <use xlink:href="svg/spriteReseau.svg#facebook"></use>
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/kingkito20/" target="_blank">
+            <svg class="icon-reseau">
+              <use xlink:href="svg/spriteReseau.svg#instagram"></use>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jean-ronel-belgarde-944736271/"
+            target="_blank"
+          >
+            <svg class="icon-reseau">
+              <use xlink:href="svg/spriteReseau.svg#linkedin"></use>
+            </svg>
+          </a>
+
+          <a href="mailto:belganel@gmail.com">
+            <svg class="icon-reseau">
+              <use xlink:href="svg/spriteReseau.svg#email"></use>
+            </svg>
+          </a>
+
+          <a href="https://github.com/BelgardeJeanRonel" target="_blank">
+            <svg class="icon-reseau">
+              <use xlink:href="svg/spriteReseau.svg#github"></use>
+            </svg>
+          </a>
         </div>
+      </div>
     </footer>
-  
-</body>
+  </body>
 </html>

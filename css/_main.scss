@@ -184,12 +184,13 @@
                 align-items: center;
                 font-size: 1.2em;
                 margin-bottom: 30px;
+                border-bottom: 1px solid var(--bg-competences);
             }
     
             & > div:not(div:nth-child(4)){
-                padding-bottom: 30px;
-                margin-bottom: 30px;
-                border-bottom: 1px solid var(--bg-competences);
+                padding-bottom: 20px;
+                // margin-bottom: 10px;
+                // border-bottom: 1px solid var(--bg-competences);
             }
     
             & .aujourdhui{
@@ -231,12 +232,13 @@
                 align-items: center;
                 font-size: 1.2em;
                 margin-bottom: 30px;
+                border-bottom: 1px solid var(--bg-competences);
             }
 
-            & > div:nth-child(2){
-                padding-bottom: 30px;
+            & > div{
+                // padding-bottom: 30px;
                 margin-bottom: 30px;
-                border-bottom: 1px solid var(--bg-competences);
+                // border-bottom: 1px solid var(--bg-competences);
             }
         }
 
@@ -253,6 +255,10 @@
     
         .competences{
             padding-top: 50px;
+
+            h2 {
+                border-bottom: 1px solid var(--bg-competences);
+            }
 
             @include large-screen(){
                 padding-top: 0px;
