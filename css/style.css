@@ -373,6 +373,17 @@ ul {
 .main .container-right .experiences {
   padding-top: 50px;
 }
+.main .container-right .experiences .mydestination {
+  text-decoration: none;
+  display: block;
+  margin-top: 0.2rem;
+  max-width: 150px;
+  font-weight: bold;
+}
+.main .container-right .experiences .mydestination:hover {
+  -webkit-text-decoration: var(--color-primary) underline;
+          text-decoration: var(--color-primary) underline;
+}
 .main .container-right .experiences h2 {
   display: flex;
   margin-top: 0;

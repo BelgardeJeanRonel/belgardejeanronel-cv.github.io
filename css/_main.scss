@@ -225,6 +225,19 @@
         .experiences{
             padding-top: 50px;
 
+            .mydestination {
+                text-decoration: none;
+                display: block;
+                margin-top: .2rem;
+                max-width: 150px;
+                font-weight: bold;
+
+                &:hover {
+                    text-decoration: var(--color-primary) underline;
+                    
+                }
+            }
+
             & h2{
                 display: flex;
                 margin-top: 0;
